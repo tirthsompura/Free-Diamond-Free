@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tipstricksActivity"
+    android:orientation="vertical"
+    android:background="#68AFC7">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            tools:ignore="MissingConstraints">
+            <include layout="@layout/backtoolbar"></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="25dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/diamond">
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:text="Become the best with these tips"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="In Free Fire we have many tooks at our disposal to become the last survivour standing, but you must also know how to use them. Discover how to become the best free fire player with this tips."
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:text="Chooese the right leading site"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="Choosing the loading site is onlythe  first step to victory. Although it may seem truvual, it is not; determining where will staer will allow you to decided wether to start the game right or not. it is importent to choice a place isolated fom other players, near a city but not so close to it."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="There, for the best option if to solve out of town and cities, ofserve where other sell and then enter to explore.It is fundamental not to expose our selvers too much until we are properly equitted, as sepecially when we move around places with blue in quentity at quality, where many time there will be players."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="In places like this, it's also common to find kits to improve bulletproof vests. Pay attention as you explore because, although it's okay to have a level one vest, it's highly recommended to upgrade it soon. The last players will always have a powerful weapon."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:text="Get Equipment"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="As soon as we land, the first ting we have to do is to find weapons, protection, first Aid Kit, among otther things.At the beagning of the game, the best thing is to do is to greap every thing we can find, as we can always improve and change the equiment."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:text="Explore militery site"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="if there are no enemies in sight, it is a good idea to explore site light watch towers, cargo container freantach militery tents.There are usevelly good loot in this kind of places, both in weponning and supplish."
+                    android:textSize="12dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="It is not very smart to explore these areas ftom the beginning, but if we're halfway through the game, there will always be things to take Surely there will be fewer players lurking around to eliminate us."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:text="Pay attention to the safe area"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="The safe zone is described by a white circle,which we can see both on the map and in the mini-map. Inside this zone we will be safe, since, outside of it, the radioactive storm will take away our life with the passage of time. If we pay attention to the safe area, we will often see players running for their lives to get away from the storm, before it's too late. Situations like this are a perfect opportunity to eliminate opponents."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:text="Look at the mini-map"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="The mini-map is very important to avoid a whole series of threats to our survival."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="If you hear gunshots close to you, look for the red triangles in the mini-map, as they will indicate the origin of the shots. This way you will know where there are enemies nearby. At other times, we'll hear explosions and vehicles driven by players. Both will be marked by yellow or red dots around the mini-map. That will tell us which direction the sound is coming from."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="In addition to radiation, there are also danger zones. These zones are marked by red circles with the label Danger. After a few seconds, a bomber will destroy that place, so get away as soon as possible! UAV drones reveal the position of players within the yellow circle. Never expose yourself to others, but stay close to see where the revealed players are."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:text="Take cover"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="All over the map there are buildings, walls, containers, stones, trees, etc. Use them as cover! The worst thing we can do in this game is be exposed. While you're on the move, try to protect yourself with the environment so that you don't fall out of the way in the face of observant players."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="However, that means we have to move carefully. We'll never know if behind that wall, or that wall of the building, hides an opponent with a shotgun, ready to get us out of the game with two surprise shots."
+                    android:textSize="12dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:text="Use vehicles with care"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="The vehicles are used to move quickly to other places, where there is quality loot, and also to pass over the absent-minded players that we find on the road."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="If we make too much noise, the other players will be able to hear us. For that reason, use cars, vans and motorcycles carefully, so as not to reveal our position."
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+</LinearLayout>

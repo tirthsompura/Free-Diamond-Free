@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="#68AFC7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+    <include layout="@layout/backtoolbar"></include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            app:cardBackgroundColor="@color/white">
+            <androidx.cardview.widget.CardView
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="30dp"
+                android:layout_gravity="center">
+                <ImageButton
+                    android:id="@+id/startbtn"
+                    android:layout_width="95dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/startbtn">
+                </ImageButton>
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:rowCount="3"
+            android:columnCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+
+                    <ImageButton
+                        android:id="@+id/diamondapp"
+                        android:layout_width="55dp"
+                        android:layout_height="62dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/diamondapp" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:paddingBottom="5dp"
+                    android:text="Diamond"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/jiotv"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/jiotv2" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:text="Free JIO TV"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/zoomguid"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/zoomguid" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Zoom Guide"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/callf"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/callf2" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Call Forword"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/mnum"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/mnum2" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Mobile Tracker"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/xlvideo"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/xlvideo2" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="X Live Video"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/livtv"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/livtv2" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Live Tv"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/callerid"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/callerid2" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Caller ID"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/dremote"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/dremote2" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Dish Remote"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/tiktik"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/tiktik2" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Indian TikTik"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/pscreen"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/pscreen2" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Caller Screen"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/vidmate"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/vidmate2" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Vidmate"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/fcall"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/fcall" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Call Prank"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/black">
+                    <ImageButton
+                        android:id="@+id/stryedit"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/stryedit2" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Story"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/white">
+                    <ImageButton
+                        android:id="@+id/sonytv"
+                        android:layout_width="70dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/sonytv2" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Sony Tv"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

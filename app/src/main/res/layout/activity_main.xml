@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#68AFC7"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <include layout="@layout/backtoolbar"></include>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            app:cardCornerRadius="15dp"
+            android:padding="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_centerVertical="true">
+
+                <ImageButton
+                    android:id="@+id/play"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/play" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:textSize="10dp"
+                android:layout_marginLeft="58dp"
+                android:layout_gravity="bottom"
+                android:paddingBottom="4dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="50dp"
+                android:paddingBottom="4dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageButton
+                    android:id="@+id/more"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/more"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:layout_gravity="end|bottom"
+                android:layout_marginRight="55dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="10dp" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            app:cardCornerRadius="15dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="30dp">
+                <ImageButton
+                    android:id="@+id/share"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/share" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textSize="10dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="bottom"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="30dp">
+                <ImageButton
+                    android:id="@+id/Rate"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/rate" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate"
+                android:textSize="10dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
+                app:cardCornerRadius="30dp">
+                <ImageButton
+                    android:id="@+id/privarcy"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/privarcy" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privarcy"
+                android:textSize="10dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="end|bottom"
+                android:layout_marginRight="30dp"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="20dp"
+            android:rowCount="2"
+            android:columnCount="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/diamondapp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/diamondapp" />
+                </androidx.cardview.widget.CardView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Free Diamond"
+                        android:textSize="10dp" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+
+                    <Button
+                        android:id="@+id/diainstall"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="end|bottom"
+                        android:textSize="6dp"
+                        android:textStyle="bold"
+                        android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/jiotv"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/jiotv" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Free JIO TV"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/jioinstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/zoomguid"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/zoomguid" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Zoom Guide"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/zoominstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/callf"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/callf" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Call Forwording"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/callinstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/mnum"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/mnum" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Mobile Tracker"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/minstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/xlvideo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/xlvideo" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="X Live Video"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/xlvinstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/livtv"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/livtv" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Live TV"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/ltvnstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/callerid"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/callerid" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Caller ID"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/cidnstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/dremote"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/dremote" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Dish Remote"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/reinstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/tiktik"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/tiktik" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Indian TikTik"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/tikinstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/pscreen"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/pscreen" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Caller Screen"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/pcinstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/vidmate"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/vidmate" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Vidmate"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/vinstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/fcall"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/fcall" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Prank Calling"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/fcinstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/stryedit"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/stryedit" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Story Editor"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/steditorinstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical|start"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+                        android:id="@+id/sonytv"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/sonytv" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="Sony TV"
+                    android:textSize="10dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="73dp"
+                    android:layout_height="13dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="end|center_vertical"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="12dp">
+                    <ImageButton
+
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginLeft="5dp"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="start|center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="18.5dp" />
+                    <ImageButton
+
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_vertical|center"
+                        app:srcCompat="@drawable/star" />
+                    <ImageButton
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/star"
+                        android:layout_marginStart="13.5dp" />
+                    <ImageButton
+
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginRight="5dp"
+                        app:srcCompat="@drawable/halfstar" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/sonyliveinstall"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="end|bottom"
+                    android:textSize="6dp"
+                    android:textStyle="bold"
+                    android:text="INSTALL"/>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

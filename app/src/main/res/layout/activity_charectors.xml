@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CharectorsActivity"
+    android:background="#68AFC7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints">
+        <include layout="@layout/backtoolbar"></include>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:rowCount="1"
+            android:columnCount="1">
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center|fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_gravity="start"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#68AFC7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Hayato" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Ablity:"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="38dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This less life he has, the more armor he will penetrate with his attacks."
+                    android:textSize="10dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#aaa009"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="#68AFC7"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center|fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_gravity="start"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#68AFC7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Moco" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Ablity:"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="38dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For a few seconds, let your teammates see where the enemoies you have shot are."
+                    android:textSize="10dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#aaa009"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="#68AFC7"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center|fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_gravity="start"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#68AFC7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Wukong" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Ablity:"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="38dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Becomes a brush with a recharge time of several minutes."
+                    android:textSize="10dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#aaa009"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="#68AFC7"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center|fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_gravity="start"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#68AFC7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Antonio " />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Ablity:"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="38dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The game begins with more life then the reset of the charectors."
+                    android:textSize="10dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#aaa009"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="#68AFC7"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center|fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_gravity="start"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#68AFC7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Andrew" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Ablity:"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="38dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ulletproof vests are more resistant so playing with androw takes longer to break."
+                    android:textSize="10dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#aaa009"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="#68AFC7"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center|fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_gravity="start"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#68AFC7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Kelly" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Ablity:"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="38dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelly's aprent is faster then normal, allowing us to rich enemies. "
+                    android:textSize="10dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#aaa009"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="#68AFC7"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center|fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_gravity="start"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#68AFC7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Olivia" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Ablity:"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="38dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="companions recive more life by being revived by olivia."
+                    android:textSize="10dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#aaa009"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="#68AFC7"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center|fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_gravity="start"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#68AFC7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Ford" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Ablity:"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="38dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The damage recived inside the radioactive zone is less eith Ford."
+                    android:textSize="10dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#aaa009"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="#68AFC7"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center|fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_gravity="start"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#68AFC7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Nikita" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Ablity:"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="38dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nikita has the ablity to recharge sub-machine gunes more quickely."
+                    android:textSize="10dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#aaa009"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="#68AFC7"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center|fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_gravity="start"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#68AFC7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Misha" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Ablity:"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="38dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All vehicals driven by misha reach a higher speed and recive less damage."
+                    android:textSize="10dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#aaa009"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="#68AFC7"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center|fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_gravity="start"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#68AFC7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Maxim" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Ablity:"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="38dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="maxim takes less time to heal or eat a mushroom to earn EP points."
+                    android:textSize="10dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#aaa009"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="#68AFC7"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center|fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp"
+                android:layout_marginBottom="20dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="65dp"
+                    android:layout_gravity="start"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#68AFC7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Kla" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Ablity:"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="38dp"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kla's punches cause the most damage throught the game,"
+                    android:textSize="10dp"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#aaa009"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="#68AFC7"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+    </ScrollView>
+
+
+</LinearLayout>
