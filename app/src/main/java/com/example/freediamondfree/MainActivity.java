@@ -14,12 +14,18 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 public class MainActivity extends AppCompatActivity {
 
     public Button diainstall, jioinstall, zoominstall, callinstall, minstall,
             xlvinstall, ltvnstall, cidnstall, reinstall, tikinstall, pcinstall, vinstall, fcinstall,steditorinstall,sonyliveinstall;
     ImageButton play, more, share, Rate, privarcy;
-
+    private AdView mAdView;
 
 
     int count = 0;
@@ -29,6 +35,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//advertising
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
+//start projrct
 
         diainstall = (Button) findViewById(R.id.diainstall);
         jioinstall = (Button) findViewById(R.id.jioinstall);
