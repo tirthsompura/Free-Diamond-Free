@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AntonioActivity"
+    android:background="#68AFC7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints">
+        <include layout="@layout/backtoolbar"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/diamondremove">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="Special Ability: The game begins with more life than the rest of the characters."
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="Price: 499 diamonds."
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="Antonio is an orphan who created his own street gang. He grew up as a gangster and in seven years managed to get rid of all his rivals. If anyone thinks of threatening his family, let him prepare himself: he will do everything possible to protect them, even if it puts his life at risk."
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="This character is the best if we want to have the advantage in the first encounters. His increased initial life translates into more durability at the beginning of the game."
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

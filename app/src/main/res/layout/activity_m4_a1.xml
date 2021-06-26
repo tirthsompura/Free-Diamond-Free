@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".M4A1Activity"
+    android:background="#68AFC7"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints">
+        <include layout="@layout/backtoolbar"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/diamondremove">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="The M4A1 is one of the most famous weapons in the game and the most powerful assault rifle. Add to that its good damage and precision, and it's no wonder that this weapon is the favorite of many players. In addition, it's often easy to find during a game, especially in military locations."
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="Its great advantage is that we can add all kinds of extras, and it is perfect for both novices and experienced players."
+                android:textSize="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

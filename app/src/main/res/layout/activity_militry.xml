@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MilitryActivity"
+    android:background="#68AFC7"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints">
+        <include layout="@layout/backtoolbar"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/diamondremove">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="This military jeep is one of the most abundant vehicles on Free Fire maps, but it's not very fast precisely. If you're driving up a steep hill, you'll notice that the jeep has a hard time overcoming the incline and, in fact, it's common for you to end up going downhill."
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="Drive this vehicle if there is no other option. It's true that the jeep can withstand a lot of shooting, especially if you turn your back on the shooters. The back of the jeep can get you out of more than one predicament!"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="Curious detail: as the sports car is very fast, if you hit a player who is on foot, he will fly away and will have extra damage from the fall."
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

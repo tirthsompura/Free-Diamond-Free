@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmbhibianActivity"
+    android:background="#68AFC7"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints">
+        <include layout="@layout/backtoolbar"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/diamondremove">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="If you see this vehicle and you need to cross a river, don't even think about it: use this amphibian. Driven by the water, this four-wheeled bike gives you total movement versatility across both Free Fire maps."
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="As you might expect, it's often found near areas where there's a river nearby. If you want to explore on a small island or something like that, do it without fear, as you can return to the main terrain without being exposed on the connecting bridges. Many are clever and wait on the other side of the bridge!"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="Also, as there is room for two people... the best vehicle to move freely in Duo mode!"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

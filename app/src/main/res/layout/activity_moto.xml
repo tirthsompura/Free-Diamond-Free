@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MotoActivity"
+    android:background="#68AFC7"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints">
+        <include layout="@layout/backtoolbar"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/diamondremove">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="This motorcycle has a perfect combination of speed and handling, which is why many players prefer it to other vehicles. However, it has the disadvantage of exposing the rider, so if you don't go fast, you'll be an easy target to hit."
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="The good news is that, because the motorcycle is small, it allows you to move more quickly and pass narrow places without a lot of problems."
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="Curious detail: as the sports car is very fast, if you hit a player who is on foot, he will fly away and will have extra damage from the fall."
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

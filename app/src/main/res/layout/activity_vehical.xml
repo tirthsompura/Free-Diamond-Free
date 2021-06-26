@@ -73,6 +73,7 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/sportcar"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"
@@ -131,6 +132,7 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/moster"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"
@@ -189,6 +191,7 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/moto"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"
@@ -247,6 +250,7 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/ambhibion"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"
@@ -305,6 +309,7 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/militry"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"
@@ -363,6 +368,7 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/tuktuk"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"
@@ -422,6 +428,7 @@
                     android:layout_marginRight="30dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/van"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"

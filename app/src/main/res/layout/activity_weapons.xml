@@ -73,6 +73,7 @@
             android:layout_marginLeft="5dp"
             android:textColor="#aaa009"/>
         <androidx.cardview.widget.CardView
+            android:id="@+id/an94"
             android:layout_width="30dp"
             android:layout_height="30dp"
             app:cardBackgroundColor="#68AFC7"
@@ -89,7 +90,7 @@
     </androidx.cardview.widget.CardView>
 
 
-    <androidx.cardview.widget.CardView
+        <androidx.cardview.widget.CardView
                 android:layout_gravity="center|fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -132,6 +133,7 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/m4a1"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"
@@ -190,6 +192,7 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/ak"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"
@@ -248,6 +251,7 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/m14"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"
@@ -306,6 +310,7 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/scar"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"
@@ -364,6 +369,7 @@
                     android:layout_marginLeft="5dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/gonza"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"
@@ -423,6 +429,7 @@
                     android:layout_marginRight="30dp"
                     android:textColor="#aaa009"/>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/famas"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:cardBackgroundColor="#68AFC7"
@@ -437,9 +444,6 @@
                         android:background="@drawable/ic_baseline_keyboard_arrow_right_24" />
                 </androidx.cardview.widget.CardView>
             </androidx.cardview.widget.CardView>
-
-
-
         </GridLayout>
 </ScrollView>
 
