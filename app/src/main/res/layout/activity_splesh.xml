@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SpleshActivity"
-    android:background="#68AFC7"
+    android:background="#EEEDEF"
     android:padding="16dp">
 
 <androidx.cardview.widget.CardView
@@ -31,7 +31,7 @@
             android:paddingRight="30dp"
             android:paddingTop="30dp"
             android:paddingLeft="30dp"
-            android:textColor="#FFF"
+            android:textColor="#46605F"
             android:textSize="20dp"
             android:textStyle="bold"/>
 
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:text="0 %"
             android:fontFamily="@font/timesbd"
-            android:textColor="#FFF"
+            android:textColor="#46605F"
             android:textStyle="bold"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"

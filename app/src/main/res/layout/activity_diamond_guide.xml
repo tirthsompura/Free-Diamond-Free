@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DiamondGuideActivity"
-    android:background="#68AFC7"
+    android:background="#A3C1CC"
     android:orientation="vertical">
 
     <LinearLayout
@@ -386,7 +386,8 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             app:cardCornerRadius="10sp"
-            android:layout_margin="5sp">
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="20dp">
             <androidx.cardview.widget.CardView
                 android:layout_width="50dp"
                 android:layout_height="50dp"

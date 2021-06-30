@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NikitaActivity"
-    android:background="#68AFC7"
+    android:background="#A3C1CC"
     android:orientation="vertical">>
 
     <LinearLayout
@@ -16,7 +16,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:orientation="vertical"
         android:gravity="center">
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".tipstricksActivity"
     android:orientation="vertical"
-    android:background="#68AFC7">
+    android:background="#A3C1CC">
 
         <LinearLayout
             android:layout_width="wrap_content"

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".StartActivity"
-    android:background="#68AFC7"
+    android:background="#A3C1CC"
     android:orientation="vertical">
 
     <LinearLayout
@@ -545,9 +545,101 @@
                     android:textStyle="bold"/>
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/white">
+                    <ImageButton
+                        android:id="@+id/musicplayer"
+                        android:layout_width="70dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/musicplayer" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Music Player"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/white">
+                    <ImageButton
+                        android:id="@+id/gallery"
+                        android:layout_width="70dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/gallery" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Gallery"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
 
-
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="55dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/white">
+                    <ImageButton
+                        android:id="@+id/camera"
+                        android:layout_width="70dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/camera" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Camera"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
         </GridLayout>
     </ScrollView>
 </LinearLayout>
