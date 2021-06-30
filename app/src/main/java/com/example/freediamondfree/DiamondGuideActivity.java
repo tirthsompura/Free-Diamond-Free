@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 public class DiamondGuideActivity extends AppCompatActivity {
 
-    ImageView left_icon,tipsimg,Weapons,charector,vehical;
+    ImageView left_icon,tipsimg,Weapons,charector,vehical,home;
     CardView dianondcardview,tipstrickcard,weaponscard,charectorcard,vehicalcard;
 
     @Override
@@ -18,6 +18,7 @@ public class DiamondGuideActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diamond_guide);
 //images ::
+        home= (ImageView)findViewById(R.id.home);
         left_icon= (ImageView)findViewById(R.id.left_icon);
         tipsimg= (ImageView)findViewById(R.id.tipsimg);
         Weapons= (ImageView)findViewById(R.id.Weapons);
@@ -31,6 +32,13 @@ public class DiamondGuideActivity extends AppCompatActivity {
         vehicalcard= (CardView)findViewById(R.id.vehicalcard);
 
 //image view links::
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(DiamondGuideActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
         left_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class tipstricksActivity extends AppCompatActivity {
 
-    ImageView left_icon;
+    ImageView left_icon,home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +17,16 @@ public class tipstricksActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tipstricks);
 
         left_icon = (ImageView) findViewById(R.id.left_icon);
+        home = (ImageView) findViewById(R.id.home);
 
 
-        left_icon.setOnClickListener(new View.OnClickListener() {
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(tipstricksActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });left_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(tipstricksActivity.this, DiamondGuideActivity.class);

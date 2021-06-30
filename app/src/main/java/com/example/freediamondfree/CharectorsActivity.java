@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class CharectorsActivity extends AppCompatActivity {
-    ImageView left_icon;
+    ImageView left_icon,home;
     CardView hayato,moco,wukong,antonio,andrew,kelly,olivia,ford,nikita,misha,maxim,kla;
 
     @Override
@@ -17,6 +17,7 @@ public class CharectorsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_charectors);
 
+        home= (ImageView)findViewById(R.id.home);
         left_icon= (ImageView)findViewById(R.id.left_icon);
         hayato = (CardView)findViewById(R.id.hayato);
         moco= (CardView)findViewById(R.id.moco);
@@ -30,6 +31,14 @@ public class CharectorsActivity extends AppCompatActivity {
         misha= (CardView)findViewById(R.id.misha);
         maxim= (CardView)findViewById(R.id.maxim);
         kla= (CardView)findViewById(R.id.kla);
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(CharectorsActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
 
         left_icon.setOnClickListener(new View.OnClickListener() {
             @Override

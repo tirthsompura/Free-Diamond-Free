@@ -8,15 +8,22 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class AntonioActivity extends AppCompatActivity {
-    ImageView left_icon;
+    ImageView left_icon,home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_antonio);
 
+        home= (ImageView)findViewById(R.id.home);
         left_icon= (ImageView)findViewById(R.id.left_icon);
 
-        left_icon.setOnClickListener(new View.OnClickListener() {
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(AntonioActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });left_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(AntonioActivity.this, CharectorsActivity.class);

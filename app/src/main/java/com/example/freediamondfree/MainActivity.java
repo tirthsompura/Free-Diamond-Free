@@ -19,32 +19,24 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Button diainstall, jioinstall, zoominstall, callinstall, minstall,
-            xlvinstall, ltvnstall, cidnstall, reinstall, tikinstall, pcinstall, vinstall, fcinstall,steditorinstall,sonyliveinstall;
-    ImageButton play, more, share, Rate, privarcy;
-    private AdView mAdView;
+    public Button diainstall, jioinstall, zoominstall, callinstall, minstall,gallerynstall,camerainstall,
+            xlvinstall, ltvnstall, cidnstall, reinstall, tikinstall, pcinstall, vinstall, fcinstall,steditorinstall,sonyliveinstall,musicinstall;
+    ImageButton play, more;
+
+    ImageView logout,share, Rate;
 
 
-    int count = 0;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//advertising
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
 
 //start projrct
@@ -64,16 +56,27 @@ public class MainActivity extends AppCompatActivity {
         fcinstall = (Button) findViewById(R.id.fcinstall);
         steditorinstall = (Button) findViewById(R.id.steditorinstall);
         sonyliveinstall = (Button) findViewById(R.id.sonyliveinstall);
+        musicinstall = (Button) findViewById(R.id.musicinstall);
+        gallerynstall = (Button) findViewById(R.id.gallerynstall);
+        camerainstall = (Button) findViewById(R.id.camerainstall);
 
 
         play = (ImageButton) findViewById(R.id.play);
         more = (ImageButton) findViewById(R.id.more);
-        share = (ImageButton) findViewById(R.id.share);
-        Rate = (ImageButton) findViewById(R.id.Rate);
-        privarcy = (ImageButton) findViewById(R.id.privarcy);
+        share = (ImageView) findViewById(R.id.share);
+        Rate = (ImageView) findViewById(R.id.rate);
+        logout = (ImageView)findViewById(R.id.logout);
 
+        mAuth = FirebaseAuth.getInstance();
 
-
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mAuth.signOut();
+                Intent i = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(i);
+            }
+        });
         diainstall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -195,7 +198,27 @@ public class MainActivity extends AppCompatActivity {
                 gotoUrl("https://play.google.com/store/apps/details?id=com.sonyliv");
             }
         });
+        musicinstall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                gotoUrl("https://play.google.com/store/apps/details?id=power.musicplayer.bass.booster");
+            }
+        });
+        gallerynstall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                gotoUrl("https://play.google.com/store/apps/details?id=photo.manager.private.photogallery");
+            }
+        });
+        camerainstall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                gotoUrl("https://play.google.com/store/apps/details?id=beauty.cam.photo.editor");
+            }
+        });
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -229,16 +252,24 @@ public class MainActivity extends AppCompatActivity {
         Uri uri = Uri.parse(s);
         startActivity(new Intent(Intent.ACTION_VIEW, uri));
     }
-    public void onBackPressed(){
-        if(count==0)
-        {
-            Toast.makeText(this,"Press Again",Toast.LENGTH_SHORT).show();
-            count++;
-        }else{
-            super.onBackPressed();
-        }
+    //int counter = 0;
+    @Override
+    public void onBackPressed() {
+       // counter++;
+        //if (counter == 2);
+           // super.onBackPressed();
+        finishAffinity();
+       // finish();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = mAuth.getCurrentUser();
+        if (user == null){
+            startActivity(new Intent(MainActivity.this,LoginActivity.class));
+        }
+    }
 }
 
 

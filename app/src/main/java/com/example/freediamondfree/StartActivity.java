@@ -19,8 +19,8 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 public class StartActivity extends AppCompatActivity {
 
     ImageButton startbtn, diamondappimage, jiotvimage, zoomguidimage, callfimage, mnumimage, xlvideoimage, livtvimage, calleridimage, dremoteimage, tiktikimage, pscreenimage,
-            vidmateimage, fcallimage,stryedit,sonytv;
-    ImageView left_icon;
+            vidmateimage, fcallimage,stryedit,sonytv,musicplayer,camera,gallery;
+    ImageView left_icon,home;;
     private AdView mAdView;
 
     @Override
@@ -43,6 +43,7 @@ public class StartActivity extends AppCompatActivity {
 //start projrct
         startbtn = (ImageButton) findViewById(R.id.startbtn);
         left_icon = (ImageView) findViewById(R.id.left_icon);
+        home = (ImageView) findViewById(R.id.home);
 
         diamondappimage = (ImageButton) findViewById(R.id.diamondapp);
         jiotvimage = (ImageButton) findViewById(R.id.jiotv);
@@ -59,9 +60,17 @@ public class StartActivity extends AppCompatActivity {
         vidmateimage = (ImageButton) findViewById(R.id.vidmate);
         stryedit = (ImageButton) findViewById(R.id.stryedit);
         sonytv = (ImageButton) findViewById(R.id.sonytv);
+        musicplayer = (ImageButton) findViewById(R.id.musicplayer);
+        camera = (ImageButton) findViewById(R.id.camera);
+        gallery= (ImageButton) findViewById(R.id.gallery);
 
-
-
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(StartActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
         startbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -194,6 +203,27 @@ public class StartActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 gotoUrl("https://play.google.com/store/apps/details?id=com.sonyliv");
+            }
+        });
+        musicplayer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                gotoUrl("https://play.google.com/store/apps/details?id=power.musicplayer.bass.booster");
+            }
+        });
+        gallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoUrl("https://play.google.com/store/apps/details?id=photo.manager.private.photogallery");
+            }
+        });
+
+        camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                gotoUrl("https://play.google.com/store/apps/details?id=beauty.cam.photo.editor");
             }
         });
     }

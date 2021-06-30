@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class VehicalActivity extends AppCompatActivity {
-    ImageView left_icon;
+    ImageView left_icon,home;
     CardView sportcar,moster,moto,ambhibion,militry,tuktuk,van;
 
 
@@ -19,6 +19,7 @@ public class VehicalActivity extends AppCompatActivity {
         setContentView(R.layout.activity_vehical);
 
         left_icon= (ImageView)findViewById(R.id.left_icon);
+        home = (ImageView) findViewById(R.id.home);
         sportcar= (CardView)findViewById(R.id.sportcar);
         moster= (CardView)findViewById(R.id.moster);
         moto= (CardView)findViewById(R.id.moto);
@@ -26,6 +27,14 @@ public class VehicalActivity extends AppCompatActivity {
         militry= (CardView)findViewById(R.id.militry);
         tuktuk= (CardView)findViewById(R.id.tuktuk);
         van= (CardView)findViewById(R.id.van);
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(VehicalActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
 
         left_icon.setOnClickListener(new View.OnClickListener() {
             @Override

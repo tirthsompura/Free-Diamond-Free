@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class WeaponsActivity extends AppCompatActivity {
-    ImageView left_icon;
+    ImageView left_icon,home;
     CardView an94,m4a1,ak,m14,scar,gonza,famas;
 
     @Override
@@ -18,6 +18,7 @@ public class WeaponsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_weapons);
 
         left_icon = (ImageView) findViewById(R.id.left_icon);
+        home = (ImageView) findViewById(R.id.home);
 
         an94 = (CardView) findViewById(R.id.an94);
         m4a1 = (CardView) findViewById(R.id.m4a1);
@@ -26,6 +27,14 @@ public class WeaponsActivity extends AppCompatActivity {
         scar = (CardView) findViewById(R.id.scar);
         gonza = (CardView) findViewById(R.id.gonza);
         famas = (CardView) findViewById(R.id.famas);
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(WeaponsActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
 
         left_icon.setOnClickListener(new View.OnClickListener() {
             @Override

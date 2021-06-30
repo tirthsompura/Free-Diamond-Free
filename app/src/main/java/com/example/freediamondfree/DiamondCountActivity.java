@@ -15,7 +15,7 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 
 public class DiamondCountActivity extends AppCompatActivity {
 
-    ImageView left_icon;
+    ImageView left_icon,home;
     private AdView mAdView;
 
     @Override
@@ -37,9 +37,16 @@ public class DiamondCountActivity extends AppCompatActivity {
 
 
 
+        home= (ImageView)findViewById(R.id.home);
         left_icon= (ImageView)findViewById(R.id.left_icon);
 
-        left_icon.setOnClickListener(new View.OnClickListener() {
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(DiamondCountActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });left_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(DiamondCountActivity.this, GuideActivity.class);

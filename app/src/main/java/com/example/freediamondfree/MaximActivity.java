@@ -8,14 +8,21 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class MaximActivity extends AppCompatActivity {
-    ImageView left_icon;
+    ImageView left_icon,home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maxim);
         left_icon= (ImageView)findViewById(R.id.left_icon);
+        home= (ImageView)findViewById(R.id.home);
 
-        left_icon.setOnClickListener(new View.OnClickListener() {
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MaximActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });left_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MaximActivity.this, CharectorsActivity.class);
